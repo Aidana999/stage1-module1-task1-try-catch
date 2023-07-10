@@ -24,7 +24,7 @@ public class ParseIntegers {
             int number = Integer.parseInt(next);
             // todo: complete it
              try {
-                int number = Integer.parseInt(next);
+                number = Integer.parseInt(next);
                 sum += number;
             } catch (NumberFormatException e) {
                 continue; 
