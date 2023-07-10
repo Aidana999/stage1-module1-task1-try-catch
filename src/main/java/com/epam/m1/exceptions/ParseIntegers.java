@@ -23,16 +23,15 @@ public class ParseIntegers {
             String next = words.next();
             int number = Integer.parseInt(next);
             // todo: complete it
-             try {
-                number = Integer.parseInt(next);
-                sum += number;
-            } catch (NumberFormatException e) {
-                continue; 
-            }
-            justWords += next + " ";
+            try {
+            int number = Integer.parseInt(next);
+            sum += number;
+        } catch (NumberFormatException e) {
+            justWordsBuilder.append(next).append(" ");
         }
-        justWords = justWords.trim();
-        }
+    }
+
+        String justWords = justWordsBuilder.toString().trim();
         System.out.println("Sum is " + sum);
         System.out.println("Just words:" + justWords);
     }
